@@ -5,6 +5,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.Feature;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
@@ -15,8 +16,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 @ExtendWith(MyListener.class)
 public class FunnelsTestCRM {
-
+    @Test
     @Feature("Funnel")
+    @Tag("positive")
     public void createFunnel() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
@@ -42,7 +44,9 @@ public class FunnelsTestCRM {
 
     }
 
+    @Test
     @Feature("Funnel")
+    @Tag("positive")
 
     public void deleteFunnel() {
         SelenideLogger.addListener("allure", new AllureSelenide());
@@ -65,9 +69,9 @@ public class FunnelsTestCRM {
 
     }
 
-    @Order(3)
     @Test
     @Feature("Funnel")
+    @Tag("positive")
 
     public void renameFunnel() {
         SelenideLogger.addListener("allure", new AllureSelenide());
