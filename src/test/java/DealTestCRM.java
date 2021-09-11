@@ -18,7 +18,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 @ExtendWith(MyListener.class)
 public class DealTestCRM {
 
-    @Test
+    // @Test
     @Feature("Deals")
     @Tag("positiveTest")
     public void createQuickDeal() {
@@ -44,7 +44,7 @@ public class DealTestCRM {
 
     }
 
-    @Test
+    // @Test
     @Feature("Deals")
     @Tag("positiveTest")
     public void removeDealFromTable() {
@@ -64,7 +64,7 @@ public class DealTestCRM {
     }
 
 
-    @Test
+    // @Test
     @Feature("Deal")
     @Tag("positiveTest")
     public void bulkRemoveDealsFromTable() {
@@ -86,7 +86,7 @@ public class DealTestCRM {
 // Добавить проверку на удалённые таблицы
     }
 
-    @Test
+    // @Test
     @Feature("Deal")
     @Tag("positiveTest")
     public void changePipelineFromTableView() {
@@ -107,7 +107,7 @@ public class DealTestCRM {
 // Добавить проверку , переименовать метод с гет на чуз
     }
 
-    @Test
+    // @Test
     @Feature("Deal")
     @Tag("positiveTest")
     public void changeStageFromTableView() {
@@ -129,7 +129,7 @@ public class DealTestCRM {
     }
 
 
-    @Test
+    // @Test
     @Feature("Deal")
     @Tag("positiveTest")
     public void changePipelineAndStageFromTableView() {
